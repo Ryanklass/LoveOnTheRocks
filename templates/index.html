@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Shorts Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YouTube Shorts Generator</h1>
+    <button onclick="window.location.href='/generate_videos/1'">Generate 1 Video</button>
+    <button onclick="window.location.href='/generate_videos/2'">Generate 2 Videos</button>
+    <button onclick="window.location.href='/generate_videos/3'">Generate 3 Videos</button>
+    <button onclick="window.location.href='/generate_videos/4'">Generate 4 Videos</button>
+    <button onclick="window.location.href='/generate_videos/5'">Generate 5 Videos</button>
+    <button onclick="window.location.href='/generate_videos/10'">Generate 10 Videos</button>
+    <h2>Logs:</h2>
+    <ul>
+        {% for message in log_messages %}
+            <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
